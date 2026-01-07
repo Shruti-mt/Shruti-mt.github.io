@@ -6,19 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --primary: #6366f1;      /* Indigo */
+      --secondary: #ec4899;    /* Pink accent */
+      --bg: #f8fafc;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --card: #ffffff;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f4f6f8;
-      color: #222;
+      background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+      color: var(--text);
       line-height: 1.6;
     }
 
     .container {
       max-width: 900px;
-      margin: auto;
-      padding: 40px 24px;
-      background: #fff;
+      margin: 40px auto;
+      padding: 40px 28px;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
     header {
@@ -26,13 +37,17 @@
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 8px;
+      font-size: 40px;
+      margin-bottom: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .subtitle {
       font-size: 18px;
-      color: #555;
+      color: var(--muted);
+      margin-bottom: 12px;
     }
 
     section {
@@ -42,47 +57,57 @@
     h2 {
       font-size: 24px;
       margin-bottom: 16px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 6px;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
     }
 
     .skills span {
       display: inline-block;
-      background: #eef1f7;
-      padding: 6px 12px;
-      margin: 6px 6px 0 0;
-      border-radius: 20px;
+      background: rgba(99,102,241,0.1);
+      color: var(--primary);
+      padding: 8px 14px;
+      margin: 6px 8px 0 0;
+      border-radius: 999px;
       font-size: 14px;
+      font-weight: 500;
     }
 
     .project {
-      margin-bottom: 24px;
+      background: #f9fafb;
+      border-left: 4px solid var(--secondary);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .project-title {
       font-weight: 600;
       font-size: 18px;
+      margin-bottom: 4px;
     }
 
     .project-tech {
       font-size: 14px;
-      color: #666;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
       margin-top: 60px;
       font-size: 14px;
-      color: #777;
+      color: var(--muted);
       text-align: center;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -121,41 +146,29 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <div class="project-title">
-          TravelNest — Full-Stack Resort Booking Platform
-        </div>
-        <div class="project-tech">
-          React, Node.js, Express, MongoDB
-        </div>
+        <div class="project-title">TravelNest — Full-Stack Resort Booking Platform</div>
+        <div class="project-tech">React, Node.js, Express, MongoDB</div>
         <p>
           Developed a full-stack booking platform with real-time listings,
-          REST APIs, and an intuitive user interface to improve user engagement.
+          REST APIs, and an intuitive user interface to improve engagement.
         </p>
       </div>
 
       <div class="project">
-        <div class="project-title">
-          SmartPaws — Animal Rescue & Adoption Analytics
-        </div>
-        <div class="project-tech">
-          Python, Pandas, ETL, Data Analysis
-        </div>
+        <div class="project-title">SmartPaws — Animal Rescue & Adoption Analytics</div>
+        <div class="project-tech">Python, Pandas, ETL, Data Analysis</div>
         <p>
           Automated data pipelines and generated actionable insights from
-          multi-year animal rescue datasets to support NGO decision-making.
+          multi-year animal rescue datasets to support NGO decisions.
         </p>
       </div>
 
       <div class="project">
-        <div class="project-title">
-          Text2Bark — Breed Prediction using NLP & ML
-        </div>
-        <div class="project-tech">
-          TF-IDF, Logistic Regression, Flask
-        </div>
+        <div class="project-title">Text2Bark — Breed Prediction using NLP & ML</div>
+        <div class="project-tech">TF-IDF, Logistic Regression, Flask</div>
         <p>
-          Built an NLP-based classifier for breed prediction and deployed it
-          via a lightweight Flask API for real-time use.
+          Built an NLP-based classifier and deployed it via a lightweight
+          Flask API for real-time predictions.
         </p>
       </div>
     </section>
