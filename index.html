@@ -1,84 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shruti | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Shruti Tangadi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
-      background: white;
-      padding: 40px;
+      padding: 40px 24px;
+      background: #fff;
     }
+
+    header {
+      margin-bottom: 40px;
+    }
+
     h1 {
-      margin-bottom: 5px;
+      font-size: 36px;
+      margin-bottom: 8px;
     }
-    h2 {
-      margin-top: 30px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
     }
-    ul {
-      line-height: 1.8;
-    }
-    .tag {
-      display: inline-block;
-      background: #eef;
-      padding: 4px 10px;
-      margin: 4px 6px 4px 0;
-      border-radius: 12px;
-      font-size: 14px;
-    }
-    footer {
+
+    section {
       margin-top: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #eef1f7;
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 20px;
       font-size: 14px;
-      color: gray;
+    }
+
+    .project {
+      margin-bottom: 24px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .project-tech {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Shruti</h1>
-    <p>A motivated BCA fresher seeking an internship and project-based opportunities to apply and strengthen my foundation in computer applications, gain hands-on experience, and develop practical skills in a real-world environment.</p>
 
-    <h2>Skills</h2>
-    <div class="tag">HTML</div>
-    <div class="tag">CSS</div>
-    <div class="tag">JavaScript</div>
-    <div class="tag">Python</div>
-    <div class="tag">MySQL</div>
-    <div class="tag">AI/ML</div>
-    <div class="tag">NLP</div>
+    <header>
+      <h1>Shruti Tangadi</h1>
+      <p class="subtitle">
+        Final-year BCA student | Web Development & AI/ML
+      </p>
+      <p>
+        I enjoy building practical, real-world applications using modern web technologies
+        and exploring data-driven solutions with machine learning.
+      </p>
+    </header>
 
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>TravelNest</strong> — Full-Stack Resort Booking Platform (MERN)<br>
-        <small>React, Node.js, Express, MongoDB</small>
-      </li>
-      <li>
-        <strong>SmartPaws</strong> — Animal Rescue & Adoption Analytics<br>
-        <small>Python, Pandas, ETL, Data Analysis</small>
-      </li>
-      <li>
-        <strong>Text2Bark</strong> — Breed Prediction using NLP & ML<br>
-        <small>TF-IDF, Logistic Regression, Flask</small>
-      </li>
-    </ul>
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>Python</span>
+        <span>MySQL</span>
+        <span>Machine Learning</span>
+        <span>NLP</span>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: tangadishruti@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Shruti-mt" target="_blank">github.com/Shruti-mt</a></p>
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-title">
+          TravelNest — Full-Stack Resort Booking Platform
+        </div>
+        <div class="project-tech">
+          React, Node.js, Express, MongoDB
+        </div>
+        <p>
+          Developed a full-stack booking platform with real-time listings,
+          REST APIs, and an intuitive user interface to improve user engagement.
+        </p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          SmartPaws — Animal Rescue & Adoption Analytics
+        </div>
+        <div class="project-tech">
+          Python, Pandas, ETL, Data Analysis
+        </div>
+        <p>
+          Automated data pipelines and generated actionable insights from
+          multi-year animal rescue datasets to support NGO decision-making.
+        </p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          Text2Bark — Breed Prediction using NLP & ML
+        </div>
+        <div class="project-tech">
+          TF-IDF, Logistic Regression, Flask
+        </div>
+        <p>
+          Built an NLP-based classifier for breed prediction and deployed it
+          via a lightweight Flask API for real-time use.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:tangadishruti@gmail.com">tangadishruti@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Shruti-mt" target="_blank">github.com/Shruti-mt</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/shruti-tangadi-a4424a371" target="_blank">
+        linkedin.com/in/shruti-tangadi
+      </a></p>
+    </section>
 
     <footer>
       © 2026 Shruti Tangadi
     </footer>
+
   </div>
 </body>
 </html>
