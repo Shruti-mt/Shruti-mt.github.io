@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --accent: #2563eb;   /* calm blue */
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #fafafa;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #fafafa;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.7;
     }
 
@@ -22,38 +30,47 @@
 
     h1 {
       font-size: 34px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       font-weight: 600;
     }
 
     .intro {
-      color: #555;
-      max-width: 600px;
-      margin-bottom: 40px;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 48px;
     }
 
     section {
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
 
     h2 {
       font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #666;
-      margin-bottom: 16px;
+      color: var(--accent);
+      margin-bottom: 18px;
     }
 
     .skills span {
       display: inline-block;
       margin-right: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       font-size: 15px;
-      color: #333;
+      color: var(--text);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 2px;
     }
 
     .project {
-      margin-bottom: 26px;
+      padding-left: 14px;
+      border-left: 3px solid var(--border);
+      margin-bottom: 28px;
+      transition: border-color 0.2s ease;
+    }
+
+    .project:hover {
+      border-left-color: var(--accent);
     }
 
     .project-title {
@@ -63,17 +80,12 @@
 
     .project-tech {
       font-size: 14px;
-      color: #777;
-      margin-bottom: 6px;
-    }
-
-    .project p {
-      margin: 0;
-      max-width: 700px;
+      color: var(--muted);
+      margin-bottom: 8px;
     }
 
     a {
-      color: #2563eb;
+      color: var(--accent);
       text-decoration: none;
     }
 
@@ -84,7 +96,7 @@
     footer {
       margin-top: 80px;
       font-size: 14px;
-      color: #888;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -92,7 +104,7 @@
 <body>
   <div class="wrap">
 
-    <h1>Shruti Tangadi</h1>
+    <h1><span style="color: var(--accent);">Shruti</span> Tangadi</h1>
     <p class="intro">
       Final-year BCA student interested in web development and beginner-level AI/ML.
       I like building practical applications and understanding how systems work end to end.
