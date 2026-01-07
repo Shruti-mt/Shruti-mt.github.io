@@ -2,101 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shruti Tangadi | Portfolio</title>
+  <title>Shruti Tangadi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    :root {
-      --primary: #6366f1;      /* Indigo */
-      --secondary: #ec4899;    /* Pink accent */
-      --bg: #f8fafc;
-      --text: #1f2933;
-      --muted: #6b7280;
-      --card: #ffffff;
-    }
-
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #eef2ff, #fdf2f8);
-      color: var(--text);
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 40px 28px;
-      background: var(--card);
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-
-    header {
-      margin-bottom: 40px;
+    .wrap {
+      max-width: 820px;
+      margin: 60px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 34px;
       margin-bottom: 6px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-weight: 600;
     }
 
-    .subtitle {
-      font-size: 18px;
-      color: var(--muted);
-      margin-bottom: 12px;
+    .intro {
+      color: #555;
+      max-width: 600px;
+      margin-bottom: 40px;
     }
 
     section {
-      margin-top: 40px;
+      margin-bottom: 48px;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #666;
       margin-bottom: 16px;
-      color: var(--primary);
-      border-left: 4px solid var(--primary);
-      padding-left: 10px;
     }
 
     .skills span {
       display: inline-block;
-      background: rgba(99,102,241,0.1);
-      color: var(--primary);
-      padding: 8px 14px;
-      margin: 6px 8px 0 0;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 500;
+      margin-right: 14px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #333;
     }
 
     .project {
-      background: #f9fafb;
-      border-left: 4px solid var(--secondary);
-      padding: 16px 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 26px;
     }
 
     .project-title {
       font-weight: 600;
-      font-size: 18px;
       margin-bottom: 4px;
     }
 
     .project-tech {
       font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 8px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .project p {
+      margin: 0;
+      max-width: 700px;
     }
 
     a {
-      color: var(--primary);
+      color: #2563eb;
       text-decoration: none;
-      font-weight: 500;
     }
 
     a:hover {
@@ -104,27 +82,21 @@
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 80px;
       font-size: 14px;
-      color: var(--muted);
-      text-align: center;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrap">
 
-    <header>
-      <h1>Shruti Tangadi</h1>
-      <p class="subtitle">
-        Final-year BCA student | Web Development & AI/ML
-      </p>
-      <p>
-        I enjoy building practical, real-world applications using modern web technologies
-        and exploring data-driven solutions with machine learning.
-      </p>
-    </header>
+    <h1>Shruti Tangadi</h1>
+    <p class="intro">
+      Final-year BCA student interested in web development and beginner-level AI/ML.
+      I like building practical applications and understanding how systems work end to end.
+    </p>
 
     <section>
       <h2>Skills</h2>
@@ -146,44 +118,46 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <div class="project-title">TravelNest — Full-Stack Resort Booking Platform</div>
-        <div class="project-tech">React, Node.js, Express, MongoDB</div>
+        <div class="project-title">TravelNest — Resort Booking Platform</div>
+        <div class="project-tech">MERN Stack</div>
         <p>
-          Developed a full-stack booking platform with real-time listings,
-          REST APIs, and an intuitive user interface to improve engagement.
+          Built a full-stack booking platform with REST APIs and a simple UI
+          to help users browse and book resorts efficiently.
         </p>
       </div>
 
       <div class="project">
         <div class="project-title">SmartPaws — Animal Rescue & Adoption Analytics</div>
-        <div class="project-tech">Python, Pandas, ETL, Data Analysis</div>
+        <div class="project-tech">Python, Pandas, Data Analysis</div>
         <p>
-          Automated data pipelines and generated actionable insights from
-          multi-year animal rescue datasets to support NGO decisions.
+          Worked with multi-year animal rescue datasets to extract insights
+          that could support adoption drives and NGO planning.
         </p>
       </div>
 
       <div class="project">
-        <div class="project-title">Text2Bark — Breed Prediction using NLP & ML</div>
-        <div class="project-tech">TF-IDF, Logistic Regression, Flask</div>
+        <div class="project-title">Text2Bark — Breed Prediction</div>
+        <div class="project-tech">NLP, Machine Learning, Flask</div>
         <p>
-          Built an NLP-based classifier and deployed it via a lightweight
-          Flask API for real-time predictions.
+          Implemented an NLP-based classifier using TF-IDF and logistic regression
+          and exposed predictions through a simple Flask API.
         </p>
       </div>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:tangadishruti@gmail.com">tangadishruti@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Shruti-mt" target="_blank">github.com/Shruti-mt</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/shruti-tangadi-a4424a371" target="_blank">
-        linkedin.com/in/shruti-tangadi
-      </a></p>
+      <p>
+        Email: <a href="mailto:tangadishruti@gmail.com">tangadishruti@gmail.com</a><br>
+        GitHub: <a href="https://github.com/Shruti-mt" target="_blank">github.com/Shruti-mt</a><br>
+        LinkedIn: <a href="https://linkedin.com/in/shruti-tangadi-a4424a371" target="_blank">
+          linkedin.com/in/shruti-tangadi
+        </a>
+      </p>
     </section>
 
     <footer>
-      © 2026 Shruti Tangadi
+      © 2026
     </footer>
 
   </div>
